@@ -1,0 +1,73 @@
+<?php header ('Content-Type: text/html; charset=utf-8'); ?>
+<!DOCTYPE html>
+<html>
+	<head>
+	<img src="iversens books & movies.jpg" alt = "iversens books & movies" width="420" height="250" >
+		<title>
+		IVERSEN'S BOOKS & MOVIES
+	</title>
+
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head> 
+<style>
+body {background-image:url('bag.jpg');}
+</style>
+
+<body>
+<div id="wrapper">
+<nav>
+<a href="http://lamp.sdu.dk/~loive13/eksamen/"style="color:black">hjem</a> |
+<a href="tilmeld.html"style="color:black">tilmeld</a> |
+<a href="omos.html"style="color:black">om os</a> |
+<a href="findos.html"style="color:black">find os</a> |
+<a href="anmeldelser.html"style="color:black">anmeldelser</a> |
+<a href="job.html"style="color:black">job</a> |
+<a href="galleri.html"style="color:black">galleri</a> |
+<a href="bestilling.html"style="color:black">bestilling</a> |
+<a href="kontakt.html"style="color:black">kontakt</a> |
+</nav>
+<article>
+<h1>
+Tilmelding
+</h1>
+<p>
+Hvis du vil være med til at deltage i vores debatter og diskussioner her på hjemmesiden, råder vi dig til, at tilmelde dig. 
+Så kan du straks komme i gang med at snakke om dine yndlingsbøger og/eller film.
+</p>
+
+<form action="<?php echo $_SERVER["PHP_SELF"]; ?>
+			<p>
+				Fornavn:<br />
+				<!-- felternes "name" kan man referere til fra php -->
+				<input type="text" name="fornavn" /><br />
+				Efternavn:<br />
+				<input type="text" name="efternavn" /><br />
+				Telefon:<br />
+				<input type="text" name="telefon" /><br />
+				E-mail:<br />
+				<input type="text" name="email" /><br />
+				<!-- når submit-knappen aktiveres,
+					sendes de værdier (value), der står i de
+					enkelte felter, afsted
+				-->
+				<input type="submit" name="submit" value="tilmeld" />
+				
+			</p>
+		</form>
+</article>
+<footer>
+<address>
+	Iversen's Books & Movies - Sejevej 12 - 1227 Sejeby - Sejeland - <a href="ivbom@hotmail.com"> ivbom@hotmail.com </a> - tlf: 12345678
+</address>
+</footer>
+</div>
+<?php
+			} // slut på "hvis der ER logget ind"
+		?>
+		<?php 
+			// luk forbindelsen til databasen
+			mysql_close(); 
+		?>
+</body>
+</html>

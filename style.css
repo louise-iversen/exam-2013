@@ -1,0 +1,99 @@
+@media screen and (min-width: 940px) {
+
+body, div, header, nav, article, aside, h1, h2, ul, li {
+	margin:0;
+	padding:0;
+	background-color:#66666;
+	}
+#wrapper {
+	background-color:#ffffff;
+	width:auto; 
+	margin:auto;
+}
+#nav
+{
+font-family:"arial";
+color:000000;
+}
+
+body 
+{
+	font-family:arial, verdana;
+	width:600px; 
+	margin:auto;
+	background-color:#FFFFFF;
+}
+h1
+{
+	-webkit-text-fill-color:#663399 ;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+	font-weight:normal;
+	font-family:arial;
+	color:#663399; 
+}
+h3
+{
+	font-family:arial;
+}
+p 
+{
+	font-size:12pt;
+	font-family:arial, verdana;
+}
+
+header
+{
+  position:right;
+  top: 0;
+  right:0;
+  color: #671e91;
+}
+
+table
+{
+	border-collapse:collapse;
+}
+table, td, th
+{
+	border:1px solid black;
+}
+a
+{
+	font-family: arial, verdana;
+	color:#FFFFF;
+	text-decoration: white;
+}
+ 
+ 
+
+footer
+{
+	font-family: arial, verdana;
+	padding: 500;
+}
+div.img
+{
+  margin: 200;
+  padding: 400;
+  border: 1px solid #ffffff;
+  height: auto;
+  width: auto;
+  float: left;
+  text-align: center;
+}	
+div.img img
+{
+  display: inline;
+  margin: 5px;
+  border: 1px solid #ffffff;
+}
+div.img a:hover img {border:  1px solid #ffffff;}
+div.desc
+{
+  text-align: center;
+  font-weight: normal;
+  width: 200px;
+  margin: 5px;
+}
+}
